@@ -38,4 +38,11 @@ public class UI {
 		String owner = sc.nextLine();
 		return owner;
 	}
+	
+	public String getDogName(){
+		System.out.println("What is the name of the dog?: ");
+		String dog = sc.nextLine();
+		return dog;
+		
+	}
 }

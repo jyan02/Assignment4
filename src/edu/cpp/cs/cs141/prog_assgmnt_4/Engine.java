@@ -27,6 +27,7 @@ public class Engine {
 	
 	public void createDog(){
 		ui.getDogOwner();
+		ui.getDogName();
 	}
 	
 	public void createBird(){
