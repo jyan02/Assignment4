@@ -14,8 +14,8 @@ public class UI {
 		keyboard = new Scanner(System.in);
 	}
 	
-	public void promptUser(){
-		System.out.println("Hello, Welcome to the Veterinary Office!\nPlease choose which animal you have: ");
+	/*public void promptUser(){
+		System.out.println("Hello, Welcome to the Veterinary Office!\n Please choose which animal you have: ");
 		System.out.println("1. Dog ");
 		System.out.println("2. Bird ");
 		System.out.println("3. Fish ");
@@ -28,6 +28,10 @@ public class UI {
 				answer = 2;
 			else if (answer == 3)
 				answer = 3;
+	}*/
+	
+	public void promtUser(){
+		System.out.println("Hello Welcome to the Veterinary Office!\nDo you have an existing appointment?: Y/N");
 	}
 	
 	public int getType(){
@@ -45,8 +49,6 @@ public class UI {
 		String dogN = sc.nextLine();
 		return dogN;
 	}
-	
-	
 	
 	public String getBirdOwner(){
 		System.out.println("What is the name of the owner?: ");
