@@ -31,10 +31,13 @@ public class Engine {
 	}
 	
 	public void createBird(){
-		
+		ui.getBirdOwner();
+		ui.getBirdName();
 	}
 	
 	public void createFish(){
+		ui.getFishOwner();
+		ui.getFishName();
 		
 	}
 }

@@ -8,7 +8,7 @@ public class Dog extends Animal {
 	
 	Dog(String dogOwnerName, String dogName, int dogAge){
 		
-		this. = name;
+	
 		
 	}
 	
