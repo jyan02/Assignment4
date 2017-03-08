@@ -33,16 +33,80 @@ public class UI {
 		return answer;
 	}
 	
-	public String getDogOwner(){
-		System.out.println("What is the name of the owner?: ");
-		String owner = sc.nextLine();
-		return owner;
+	public String getOwnerName(){
+		System.out.println("What is your name?: ");
+		String ownerName = sc.nextLine();
+		return ownerName;
 	}
 	
-	public String getDogName(){
-		System.out.println("What is the name of the dog?: ");
-		String dog = sc.nextLine();
-		return dog;
+	public String getOwnerBirthday(){
+		System.out.println("What is your date of birth?: (mm/dd/yyyy) ");
+		String getOwnerBirthday = sc.nextLine();
+		return getOwnerBirthday;
+	}
+	
+	public float getOwnerPhoneNum(){
+		System.out.println("What is your phone number?: ");
+		float ownerPhoneNumber = sc.nextFloat();
+		return ownerPhoneNumber;
+	}
+	
+	public String getOwnerAddress(){
+		System.out.println("What is your home address?: ");
+		String ownerAddress = sc.nextLine();
+		return ownerAddress;
+	}
+	
+	public String getAnimalName(){
+		System.out.println("What is the name of your animal?: ");
+		String animalName = sc.nextLine();
+		return animalName;
 		
 	}
+	
+	public int getAnimalAge(){
+		System.out.println("What is the age of your animal?: ");
+		int animalAge = sc.nextInt();
+		return animalAge;
+	}
+	
+	public void checkAppointment(){
+		System.out.println("Do you have an appointment?: "
+				+ "\n1.Yes" +"\n2.No ");
+		
+		int checkAppt = sc.nextInt();
+		
+		if (checkAppt == 1){
+			System.out.println("swag");
+		}
+		else{
+			System.out.println("Would you like to make an appointment?: "
+					+ "\n1.Yes" + "\n2.No" );
+			int makeAppointment = sc.nextInt();
+				if(makeAppointment == 1){
+					getOwnerName();
+					getOwnerBirthday();
+					getOwnerPhoneNum();
+					getOwnerAddress();
+					getAnimalName();
+					getAnimalAge();
+					
+				}
+				else if(makeAppointment == 2){
+					System.out.println("Come back next time!");
+				}
+				else
+					System.out.println("Please enter a valid choice. ");
+		}
+			
+			
+	}
+
+	
+	
+	
+	
+	
+	
 }
+;;

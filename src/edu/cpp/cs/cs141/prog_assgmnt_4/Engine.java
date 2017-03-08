@@ -1,6 +1,10 @@
 package edu.cpp.cs.cs141.prog_assgmnt_4;
 
-public class Engine {
+import java.io.Serializable;
+
+public class Engine implements Serializable {
+	
+	private static final long serialVersionUID = 9120252166535244660L;
 	
 	private UI ui;
 	
@@ -15,9 +19,10 @@ public class Engine {
 	}
 	
 	public void createAnimal(int answer){
-		if (answer == 1)
-			createDog();	
-		
+		if (answer == 1){
+			createDog();
+		}
+				
 		else if (answer == 2)
 			createBird();
 		
@@ -26,15 +31,15 @@ public class Engine {
 	}
 	
 	public void createDog(){
-		ui.getDogOwner();
-		ui.getDogName();
+		ui.checkAppointment();
+		
 	}
 	
 	public void createBird(){
-		
+		ui.checkAppointment();
 	}
 	
 	public void createFish(){
-		
+		ui.checkAppointment();
 	}
 }
