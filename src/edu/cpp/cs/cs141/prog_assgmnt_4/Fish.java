@@ -10,6 +10,10 @@ public class Fish extends Animal {
 	
 	public Fish(String name, int age, String medicalHistory, String vaccinations){
 		
+		this.fishName = name;
+		this.fishAge = age;
+		this.fishMedicalHistory = medicalHistory;
+		this.fishVaccinations = vaccinations;
 		
 		
 	}

@@ -31,15 +31,19 @@ public class Engine implements Serializable {
 	}
 	
 	public void createDog(){
-		ui.checkAppointment();
+		
+		ui.getAnimalAge();
+		ui.getAnimalName();
 		
 	}
 	
 	public void createBird(){
-		ui.checkAppointment();
+		
+		
 	}
 	
 	public void createFish(){
+		
 		ui.checkAppointment();
 	}
 }

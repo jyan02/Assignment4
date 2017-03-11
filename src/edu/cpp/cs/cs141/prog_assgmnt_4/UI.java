@@ -53,20 +53,20 @@ public class UI {
 	
 	public String getOwnerAddress(){
 		System.out.println("What is your home address?: ");
-		String ownerAddress = sc.nextLine();
+		String ownerAddress = keyboard.nextLine();
 		return ownerAddress;
 	}
 	
 	public String getAnimalName(){
 		System.out.println("What is the name of your animal?: ");
-		String animalName = sc.nextLine();
+		String animalName = keyboard.nextLine();
 		return animalName;
 		
 	}
 	
 	public int getAnimalAge(){
 		System.out.println("What is the age of your animal?: ");
-		int animalAge = sc.nextInt();
+		int animalAge = keyboard.nextInt();
 		return animalAge;
 	}
 	
@@ -84,12 +84,6 @@ public class UI {
 					+ "\n1.Yes" + "\n2.No" );
 			int makeAppointment = sc.nextInt();
 				if(makeAppointment == 1){
-					getOwnerName();
-					getOwnerBirthday();
-					getOwnerPhoneNum();
-					getOwnerAddress();
-					getAnimalName();
-					getAnimalAge();
 					
 				}
 				else if(makeAppointment == 2){
@@ -101,4 +95,10 @@ public class UI {
 			
 			
 	}	
-}
+	
+	public void DogC(){
+		
+		Dog dog = new Dog(getAnimalName(), getAnimalAge(), getOwnerName(), getOwnerAddress());
+		
+	}
+} 

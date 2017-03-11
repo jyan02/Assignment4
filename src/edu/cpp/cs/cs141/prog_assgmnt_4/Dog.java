@@ -15,6 +15,8 @@ public class Dog extends Animal {
 		this.dogMedicalHistory = medicalHistory;
 		this.dogVaccinations = vaccinations;
 		
+		
+		
 	}
 	
 }
